@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use ReevesC\AtomicData\Element;
+use ReevesC\AtomicContent\Element;
 
 
 class ElementTest extends PHPUnit_Framework_TestCase

@@ -2,10 +2,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use ReevesC\AtomicData\AbstractAtomicData;
+use ReevesC\AtomicContent\AbstractAtomicContent;
 //use \Mockery as m;
 
-class AbstractAtomicDataTest extends PHPUnit_Framework_TestCase
+class AbstractAtomicContentTest extends PHPUnit_Framework_TestCase
 {
 
   //
@@ -15,7 +15,7 @@ class AbstractAtomicDataTest extends PHPUnit_Framework_TestCase
   {
     //storing everything in _test object because its tidy, and should simplify clean up/garabage collection
     $this->_test = new stdClass();
-    $this->_test->stub = $this->getMockForAbstractClass('ReevesC\AtomicData\AbstractAtomicData');
+    $this->_test->stub = $this->getMockForAbstractClass('ReevesC\AtomicContent\AbstractAtomicContent');
 
   }
 
@@ -110,7 +110,7 @@ class AbstractAtomicDataTest extends PHPUnit_Framework_TestCase
 
     //confirm
     $this->assertArrayHasKey(0, $this->_test->response->atoms);
-    $this->assertInstanceOf('ReevesC\AtomicData\Element', $this->_test->response);
+    $this->assertInstanceOf('ReevesC\AtomicContent\Element', $this->_test->response);
     $this->assertTrue( $this->_test->stub->hasElements() );
 
   }
@@ -138,7 +138,7 @@ class AbstractAtomicDataTest extends PHPUnit_Framework_TestCase
   {
 
     $this->_test->content = 'A content string.';
-    $this->_test->stub = $this->getMockForAbstractClass('ReevesC\AtomicData\AbstractAtomicData', array(array(), $this->_test->content));
+    $this->_test->stub = $this->getMockForAbstractClass('ReevesC\AtomicContent\AbstractAtomicContent', array(array(), $this->_test->content));
     
     //_fissionReactor
     $this->_test->stub->expects( $this->any() )
