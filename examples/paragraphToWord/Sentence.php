@@ -2,9 +2,9 @@
 
 namespace ReevesC\examples\paragraphToWord;
 
-use ReevesC\AtomicData\AbstractAtomicData;
+use ReevesC\AtomicContent\AbstractAtomicContent;
 
-class Sentence extends AbstractAtomicData {
+class Sentence extends AbstractAtomicContent {
 
 
   public $childClass = __NAMESPACE__.'\Word';

@@ -1,13 +1,13 @@
 <?php
 
-namespace ReevesC\AtomicData;
+namespace ReevesC\AtomicContent;
 
-use ReevesC\AtomicData\AtomicDataInterface;
+use ReevesC\AtomicContent\AtomicContentInterface;
 
 /**
  * 
  *
- * @package   reevesC/AtomicData
+ * @package   reevesc/atomic-content
  * @author    Clinton Reeves
  * @copyright Copyright (c) 2016
  * @link    http://clintonreeves.com
@@ -33,7 +33,7 @@ use ReevesC\AtomicData\AtomicDataInterface;
  *
 **/
 
-abstract class AbstractAtomicData implements AtomicDataInterface {
+abstract class AbstractAtomicContent implements AtomicContentInterface {
 
   public $_data;
   public $elements;
@@ -134,7 +134,7 @@ abstract class AbstractAtomicData implements AtomicDataInterface {
   **/
   public function hasElements()
   {
-    return ( is_a($this->content, "ReevesC\AtomicData\Element") ) ? true : false;
+    return is_a($this->content, "ReevesC\AtomicContent\Element");
 
   }
 
@@ -280,34 +280,6 @@ abstract class AbstractAtomicData implements AtomicDataInterface {
 
 
 // ------------------------------------------------------------------------
-
-
-  /**
-   * 
-   * formatProperty()
-   *
-   * additional custom formatting for specific class properties
-   *   checks to see if format<PropertyName>() function exists and calls it if it does.
-   *
-   * @param $name string - class property to format
-   *
-   * @return void
-   *
-  **/
-/*
-  public function formatProperty($name)
-  {
-    if( method_exists($this, "format{$name}") )
-    {
-      call_user_func($name);
-    }
-    return;
-
-  }
-*/
-
-// ------------------------------------------------------------------------
-
 
 
 }

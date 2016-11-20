@@ -1,10 +1,10 @@
 <?php
 
-namespace ReevesC\AtomicData;
+namespace ReevesC\AtomicContent;
 
 /**
  *
- * @package   AtomicData
+ * @package   reevesc/atomic-content
  * @author    Clinton Reeves
  * @copyright Copyright (c) 2016
  * @link http://clintonreeves.com
@@ -13,7 +13,7 @@ namespace ReevesC\AtomicData;
 
 // ------------------------------------------------------------------------
 
-Interface AtomicDataInterface {
+Interface AtomicContentInterface {
 
 
   public function atomize();

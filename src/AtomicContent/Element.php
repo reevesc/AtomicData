@@ -1,6 +1,6 @@
 <?php
 
-namespace ReevesC\AtomicData;
+namespace ReevesC\AtomicContent;
 
 class Element {
 

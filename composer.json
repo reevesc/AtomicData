@@ -1,10 +1,10 @@
 {
-  "name": "reevesc/AtomicData",
+  "name": "reevesc/atomic-content",
   "description": "A simple php class structure that converts input data into it's smallest form (defined by developer).",
   "version": "0.1.0",
   "type": "library",
   "keywords": ["Atomic Data", "Atomized Content", "PHP"],
-  "homepage": "https://github.com/reevesc/AtomicData",
+  "homepage": "https://github.com/reevesc/atomic-content",
   "authors": [
     {
       "name": "Clinton Reeves",
